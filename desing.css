@@ -1,0 +1,127 @@
+ body{
+    background-color: rgb(218, 238, 246);
+ }
+ 
+ 
+ #Specialist{
+border-radius: 50%;
+width: 200px;
+height: 200px;
+border: 4px solid rgb(69, 119, 221);
+
+flex-direction: column;
+justify-content: center;
+transition: .6s;
+}
+
+#Specialist:hover{
+background-color: mediumorchid;
+    transform: translatey(15px) rotate(360deg);
+}
+
+h2 {
+    text-align: center;
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 33.8%;
+    border-radius: 28px;
+    background-color: aliceblue;  
+}
+
+#info{
+    margin-left: 15%;
+    width: 270px;
+}
+
+span{
+    margin-left: 35%;
+    color: rgb(30, 2, 186);
+    font-weight: bold;
+    display: flex;
+    left: 1px;
+    width: 8.5ch;
+    border-right: 4px solid ;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: maquina  1s steps(10) , blink .3s
+    infinite step-end alternate;
+}
+
+@keyframes maquina{
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50%{border-color: transparent;}
+}
+
+.review{
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    margin-top: -0.5%;
+    margin-left: 33%;
+    border-radius: 28px;
+    background-color: aliceblue;
+}
+
+
+.next-image {
+    width: 20%;
+   
+    height: -10px;
+    font-weight: bold;
+    color:white;
+    background:  rgb(30, 2, 186);
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+.next-image:hover{
+    background: linear-gradient(85deg,rgb(106, 106, 247),rgb(255, 63, 63));
+    transform: scale(1.2);
+}
+
+.prevt-image {
+    width: 20%;
+    height: -10px;
+    font-weight: bold;
+    color:white;
+    background:  rgb(30, 2, 186);
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.prevt-image:hover{
+    background: linear-gradient(85deg,rgb(106, 106, 247),rgb(255, 63, 63));
+    transform: scale(1.2);
+}
+
+
+.random-button{
+   height: 2px;
+    
+   
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    background:  rgb(30, 2, 186);
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.random-button:hover{
+    background: linear-gradient(85deg,rgb(106, 106, 247),rgb(255, 63, 63));
+    transform: scale(1.2);
+}
